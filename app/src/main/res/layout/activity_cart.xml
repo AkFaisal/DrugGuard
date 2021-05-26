@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <TextView
+        android:paddingTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:gravity="top"
+        android:text="Product   Details"
+        android:textColor="#5C6BC0"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_cart"
+        android:layout_width="match_parent"
+        android:layout_height="398dp"
+        android:paddingTop="20dp"
+
+        android:scrollbars="vertical"></androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="243dp"
+
+
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+
+            android:gravity="top"
+
+            android:layout_marginTop="5dp"
+            android:text="Shipping Address"
+            android:textColor="#5C6BC0"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/cartAddressId"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_button_border"
+            android:hint="Address"
+            android:inputType="text"
+            android:padding="20dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:text="Payment Method"
+            android:textColor="#5C6BC0"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RadioButton
+                android:id="@+id/cashOnDeliveryId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="120dp"
+                android:text="Cash on delivery">
+
+
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/makePaymentId"
+                android:layout_width="359dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="113dp"
+                android:layout_marginRight="120dp"
+
+                android:text="Make Payment (Bkash, Nagad, SSLComez, AMEX )">
+
+            </RadioButton>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/proceed_to_book"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        android:background="@color/colorPrimary"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/orderPlacedId"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+
+            android:background="#2B48EC"
+
+
+            android:text="Placed"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/grand_total_cart"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+            android:text="300 tk"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</LinearLayout>

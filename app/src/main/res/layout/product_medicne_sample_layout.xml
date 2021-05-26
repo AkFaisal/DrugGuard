@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <androidx.cardview.widget.CardView
+
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_weight="2"
+        android:id="@+id/cardViewID"
+        android:layout_width="190dp"
+        android:layout_height="300dp"
+        android:layout_marginLeft="8dp"
+
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:background="@color/cardview_light_background"
+            android:layout_width="190dp"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/productTitle_nameID"
+                android:layout_width="155dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="8dp"
+                android:text="Product_Title"
+                android:textSize="18sp"
+
+                android:textColor="@color/cardview_dark_background"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.28"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/product_Image_id"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:textColor="@android:color/holo_orange_dark"
+                android:id="@+id/productPrice_ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Product_Price"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/productTitle_nameID"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/productTitle_nameID"
+                app:layout_constraintTop_toBottomOf="@+id/productTitle_nameID"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:scaleType="centerCrop"
+
+                android:id="@+id/product_Image_id"
+                android:layout_width="match_parent"
+                android:layout_height="191dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <Button
+
+                android:id="@+id/BuyNow_Id"
+                android:layout_width="164dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/btn_bg"
+                android:backgroundTint="#EDEBEB"
+                android:text="Buy Now"
+                android:textAllCaps="false"
+                android:textColor="@color/cardview_dark_background"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/productPrice_ID"
+                app:layout_constraintVertical_bias="1.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+

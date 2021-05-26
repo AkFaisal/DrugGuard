@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group>
+        <item
+            android:id="@+id/myOrder_navi_id"
+            android:icon="@drawable/myorder_24"
+            android:title="My orders" />
+        <item
+            android:id="@+id/mycart_navi_id"
+            android:icon="@drawable/my_cart_24"
+            android:title="My cart" />
+        <item
+            android:id="@+id/myWishlist_navi_id"
+            android:icon="@drawable/mywishlist_24"
+            android:title="My Wishlist" />
+        <item
+            android:id="@+id/myAccount_navi_id"
+            android:icon="@drawable/ic_baseline_account_circle_24"
+            android:title="My Account" />
+    </group>
+</menu>
